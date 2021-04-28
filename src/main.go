@@ -29,4 +29,24 @@ func main() {
 		fmt.Println(reverseCounter)
 		reverseCounter--
 	}
+
+	//CONDICIONALES
+
+	toTest := 19
+
+	if toTest%2 == 0 {
+		fmt.Println("El número", toTest, "es par")
+	} else {
+		fmt.Println("El número", toTest, "es impar")
+	}
+
+	user := ""
+	pass := ""
+	const controlUser = ""
+
+	if user == "" && pass == "" {
+		fmt.Println(true)
+	} else {
+		fmt.Println(false)
+	}
 }
