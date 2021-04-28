@@ -21,4 +21,12 @@ func main() {
 	var radioCirculo float64 = 5
 	areaCirculo := pi * radioCirculo * radioCirculo
 	fmt.Println("El área del círculo es:", areaCirculo)
+
+	//FOR INVERTER
+
+	reverseCounter := 21
+	for reverseCounter >= 0 {
+		fmt.Println(reverseCounter)
+		reverseCounter--
+	}
 }
