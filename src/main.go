@@ -1,6 +1,22 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
+
+func isPalindromo(text string) {
+	text = strings.ToLower(text)
+	var textReverse string
+	for i := len(text) - 1; i >= 0; i-- {
+		textReverse += string(text[i])
+	}
+	if text == textReverse {
+		fmt.Println("Es un palíndromo")
+	} else {
+		fmt.Println("No es un palíndromo")
+	}
+}
 
 func main() {
 	// CALCULAR ÁREA RECTÁNGULO
@@ -49,4 +65,8 @@ func main() {
 	} else {
 		fmt.Println(false)
 	}
+
+	//RECORRIDO DE SLICES CON RANGE PARA COMPROBAR PALÍNDROMOS
+
+	isPalindromo("CAFE = efac")
 }
