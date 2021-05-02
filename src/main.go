@@ -1,6 +1,7 @@
 package main
 
 import (
+	"curso_golang_platzi/src/mypackage"
 	"fmt"
 	"strings"
 )
@@ -69,4 +70,13 @@ func main() {
 	//RECORRIDO DE SLICES CON RANGE PARA COMPROBAR PALÍNDROMOS
 
 	isPalindromo("CAFE = efac")
+
+	//PRUEBAS DE STRUCTS PRIVADAS Y PUBLICAS
+	var myCar mypackage.CarPublic
+	myCar.Brand = "Peugeot"
+	myCar.Year = 2021
+	fmt.Println(myCar)
+
+	//PRUEBAS DE FUNCIONES PRIVADAS Y PUBLICAS
+	mypackage.PrintMessage("¡¡¡VAMOS CANAYA!!!")
 }
