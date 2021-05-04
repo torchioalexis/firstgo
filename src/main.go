@@ -19,6 +19,16 @@ func isPalindromo(text string) {
 	}
 }
 
+type pc struct {
+	ram   int
+	brand string
+	disk  int
+}
+
+func (myPC pc) String() string {
+	return fmt.Sprintf("Tengo %d GB de RAM, %d GB de disco y soy marca %s", myPC.ram, myPC.disk, myPC.brand)
+}
+
 func main() {
 	// CALCULAR ÁREA RECTÁNGULO
 	baseRectangulo := 10
@@ -79,4 +89,9 @@ func main() {
 
 	//PRUEBAS DE FUNCIONES PRIVADAS Y PUBLICAS
 	mypackage.PrintMessage("¡¡¡VAMOS CANAYA!!!")
+
+	//PERSONALIZACIÓN DE OUTPUT EN CONSULA PARA STRUCTS
+	myPC := pc{ram: 16, brand: "msi", disk: 100}
+
+	fmt.Println(myPC)
 }
