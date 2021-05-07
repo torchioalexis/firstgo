@@ -1,9 +1,10 @@
 package main
 
 import (
-	"curso_golang_platzi/src/mypackage"
 	"fmt"
 	"strings"
+
+	"github.com/torchioalexis/firstgo/src/mypackage"
 )
 
 func isPalindromo(text string) {
@@ -69,7 +70,6 @@ func main() {
 
 	user := ""
 	pass := ""
-	const controlUser = ""
 
 	if user == "" && pass == "" {
 		fmt.Println(true)
