@@ -9,5 +9,3 @@ require (
 	golang.org/x/net v0.0.0-20210505214959-0714010a04ed // indirect
 	golang.org/x/sys v0.0.0-20210507014357-30e306a8bba5 // indirect
 )
-
-replace github.com/labstack/echo => ./src/echo
